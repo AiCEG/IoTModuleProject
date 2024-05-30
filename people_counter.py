@@ -24,25 +24,25 @@ def count_people(image_path):
     # Count people in the image
         model = YOLO('yolov8n.pt')  # Load the pretrained YOLOv8 model
         results = model(image_path)
-        res = results
-        names = res[0].names    # same as model.names
+        names = results[0].names    # same as model.names
 
         # store number of objects detected per class label
         class_detections_values = []
         for k, v in names.items():
-            class_detections_values.append(res[0].boxes.cls.tolist().count(k))
+            class_detections_values.append(results[0].boxes.cls.tolist().count(k))
         # create dictionary of objects detected per class
         classes_detected = dict(zip(names.values(), class_detections_values))
 
         return classes_detected['person']
 
 
+
 # Path where images will be saved
 images_folder = 'captured_images'
 
 # Take a picture
-image_path = take_picture(images_folder)
-image_path = "photo.jpg"
+#image_path = take_picture(images_folder)
+image_path = "classroom.jpg"
 
 if image_path:
     # Count people in the image
