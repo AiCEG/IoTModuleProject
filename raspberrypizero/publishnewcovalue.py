@@ -1,11 +1,11 @@
 import mh_z19
-import paho.mqtt.client as mqtt
+#import paho.mqtt.client as mqtt
 import time
 
 # MQTT Configuration
-MQTT_BROKER = "your_mqtt_broker_address"
-MQTT_PORT = 1883
-MQTT_TOPIC = "sensor/co2"
+#MQTT_BROKER = "your_mqtt_broker_address"
+#MQTT_PORT = 1883
+#MQTT_TOPIC = "sensor/co2"
 
 # MQTT Client setup
 #client = mqtt.Client()
