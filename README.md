@@ -1,6 +1,6 @@
 # IoT Module
 
-This is our Project of the IoT Module
+This is our Project of the IoT Module. We are collecting co2 data and counting the people in a room with image recognition. The goal is to gather data, build a ml model to predict how many people are in a room based on the co2 levels.
 
 # Document and Solution Overview
 
@@ -15,7 +15,7 @@ The rest is just what we tried, used and tested. To show the work and progress.
   - CO2 Module
 - Raspberry Pi
   - Discovery Collector. (MQTT Subscriber storing measurements to MongoDB)
-- External Thirdparty Server / MQTT Broker
+- External Thirdparty Server / MQTT Broker (Simple docker container running on a rented server)
 
 - Mobile Router for Connectivity
 
