@@ -41,8 +41,8 @@ def count_people(image_path):
 images_folder = 'captured_images'
 
 # Take a picture
-#image_path = take_picture(images_folder)
-image_path = "classroom.jpg"
+image_path = take_picture(images_folder)
+#image_path = "classroom.jpg"
 
 if image_path:
     # Count people in the image

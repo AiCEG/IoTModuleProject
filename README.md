@@ -2,20 +2,32 @@
 
 This is our Project of the IoT Module
 
+# Document and Solution Overview
+
+The Powerpoint is in the solution folder. All our final software is in the solution folder.
+The rest is just what we tried, used and tested. To show the work and progress.
+
 # Architecture Overview
 
 - Raspberry pi
   - Camera Module
-- Raspberry Zero
+- Raspberry Pi Zero
   - CO2 Module
-- Thirdparty Server / MQTT Broker
+- Raspberry Pi
+  - Discovery Collector. (MQTT Subscriber storing measurements to MongoDB)
+- External Thirdparty Server / MQTT Broker
+
+- Mobile Router for Connectivity
 
 # Software Overview
 
 - people_counter.py runs on Raspberry Pi
-- depth_estimater.py runs on Raspberry Pi
 
-- co_measurement.py runs on Raspberry Zero
+- collect_co2_publish.py runs on Raspberry Pi Zero
+
+- discovery_collector.py.py runs on Raspberry
+
+All the Scripts are registered as services to start on startup of the raspberry pi.
 
 # people_counter.py
 
